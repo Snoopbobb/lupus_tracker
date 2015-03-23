@@ -1,0 +1,212 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: bolder;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: radial-gradient(ellipse at center, rgba(242,116,143,0.2) 0%,rgba(152,53,165,0.8) 100%), url(images/concrete_seamless.png); 
+	background-attachment: fixed;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	margin: 0;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+h2, h3 {
+	margin-bottom: 0;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+div {
+	border: 1px solid transparent;
+}
+
+input, select, textarea{
+    color: black;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
+
+/************ Header ***************
+************************************/
+.header {
+	background-color: black;
+	height: 50px;
+	text-align: center;
+	color: white;
+}
+
+/************* Layout **************
+***********************************/
+.wrapper {
+	height: 100%;
+	position: relative;
+	padding-bottom: 200px;
+}
+
+/************* Footer **************
+************************************/
+.footer {
+	background-color: black;
+	height: 200px;
+	text-align: center;
+	color: white;
+	position: static;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/********** Home Page **************
+***********************************/
+.hero {
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	background-color: purple;
+	background-image: url(images/bg.png);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.hero-content {
+	width: 50%;
+	position: absolute;
+	margin: auto;
+  	top: 50px; left: 0; bottom: 0; right: 0;
+}
+
+.hero-buttons-wrapper {
+	position: absolute;
+	width: 50%;
+	padding: 10px 0;
+	height: 50px;
+	margin: auto;
+  	top: 0; left: 0; bottom: -200px; right: 0;
+}
+
+.hero button {
+	background-color: purple;
+	border: none;
+	color: white;
+	font-size: 120%;
+	height: 30px;
+	width: 100px;
+	border-radius: 5px;
+	margin: 10px 40px;
+}
+
+.hero button:hover {
+	background-color: white;
+	color: purple;
+	border: none;
+}
+
+.second-section {
+	height: 200px;
+	text-align: center;
+}
+
+.third-section {
+	background-color: black;
+	height: 400px;
+	text-align: center;
+	color: white;
+}
+
+.fourth-section {
+	height: 200px;
+	text-align: center;
+}
+
+.fifth-section {
+	background-color: black;
+	color: white;
+	height: 600px;
+	text-align: center;	
+}
+
+.sixth-section {
+	height: 200px;
+	text-align: center;
+}
+
+/************* Forms **************
+************************************/
+.form-wrapper {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .3);
+	color: white;
+	padding-bottom: 50px;
+	min-height: 100%;
+}
+
+.form-wrapper textarea {
+	border-radius: 5px;
+	width: 80%;
+	height: 100px;
+}
+
+.textarea-label {
+	margin-top: 50px;
+}
+
+.form-wrapper button {
+	background-color: purple;
+	color: white;
+	font-size: 120%;
+	height: 30px;
+	width: 100px;
+	border-radius: 5px;
+	margin: 0 40px;
+	border: none;
+}
+
+.form-wrapper button:hover {
+	background-color: white;
+	color: purple;
+	border: none;
+}
+
+/********** Calendar Page ***********
+************************************/
+
+#calendar {
+	margin: 0 auto;
+	height: 50%;
+	width: 50%;
+	color: black;
+}
+
+.calendar-wrapper {
+	text-align: center;
+	padding: 50px 0;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.fc-day:hover{
+    background: purple;
+    color: white;
+}
+
+.fc-unthemed .fc-today {
+  background: purple;
+  color: white;
+}
+
