@@ -68,6 +68,7 @@ $(function() {
     		var date = this.data().date;
     		window.location.href += "/" +date;
     	}
+
 	});
 
 			// Mouse pointer for calendar
@@ -108,4 +109,28 @@ $(function() {
 	});
 
 
+	$('form').on('click', function(){
+		// e.preventDefault();
+
+		$.post( "/calendar/user_id/created_at/update", function( data ) {	
+			console.log( 'works' );	   		
+		});
+
+		$(function() {
+    		var flare = 0;
+    		$("input[name=flare][value="+ flare +"]").attr('checked', true);
+    
+    	});
+	});
+
+	$(".header-button").click(function() {
+    	$('html, body').animate({
+        	scrollTop: $("div.second-section").offset().top
+    	}, 2500);
+	});
+
+	$.get("/calendar/{user_id}/{date}", function(data){
+		console.log(data);
+	});
+	
 });

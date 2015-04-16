@@ -15,6 +15,8 @@ class CreateLogsTable extends Migration {
 		Schema::create('logs', function(Blueprint $table)
 		{
 			$table->increments('log_id');
+			$table->integer('user_id')->references('user_id')->on('users');
+			$table->date('log_date');
 			$table->tinyInteger('flare');
 			$table->tinyInteger('fatigue');
 			$table->tinyInteger('headache');

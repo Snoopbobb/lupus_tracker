@@ -18,7 +18,7 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<h3>Header</h3>
+			<h3>GOT SPOONS?</h3> 
 		</div>
 		@yield('content')
 		<div class="footer">

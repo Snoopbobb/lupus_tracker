@@ -1,15 +1,18 @@
 @extends('layout')
 
 @section('content')
+    <button class="header-button">Learn More</button>
 	<div class="hero">
         <div class="hero-content">
             <h1>Welcome to Lupus Tracker</h1>
         </div>
         <div class="hero-buttons-wrapper">
             @if (Auth::user())
+                <h2>Click on Calendar Button To Track Lupus Symptoms</h2>
                 <a href="/auth/logout"><button>Logout</button></a>
                 <a href="/calendar/{{ Auth::user()->user_id }}"><button>Calendar</button></a>
             @else
+                <h2>Please Register or Login</h2>
                 <a href="/auth/register"><button>Register</button></a>
                 <a href="/auth/login"><button>Login</button></a>
             @endif
