@@ -18,7 +18,7 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<h3>GOT SPOONS?</h3> 
+			<h3><a href="{{ url('/') }}">GOT SPOONS?</a></h3> 
 		</div>
 		@yield('content')
 		<div class="footer">
