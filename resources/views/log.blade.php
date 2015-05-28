@@ -1,5 +1,5 @@
 @extends ('layout')
-{{ print_r($data->flare) }}
+{{ print_r($data) }}
 @section ('content')
 	<button class="header-button">Logout</button>
 	<div class="form-wrapper">

@@ -9,12 +9,12 @@
         <div class="hero-buttons-wrapper">
             @if (Auth::user())
                 <h2>Click on Calendar Button To Track Lupus Symptoms</h2>
-                <a href="/auth/logout"><button>Logout</button></a>
-                <a href="/calendar/{{ Auth::user()->user_id }}"><button>Calendar</button></a>
+                <a href="{{ url('/auth/logout') }}"><button>Logout</button></a>
+                <a href="{{ url('/calendar/Auth::user()->user_id') }}"><button>Calendar</button></a>
             @else
                 <h2>Please Register or Login</h2>
-                <a href="/auth/register"><button>Register</button></a>
-                <a href="/auth/login"><button>Login</button></a>
+                <a href="{{ url('/auth/register') }}"><button>Register</button></a>
+                <a href="{{ url('/auth/login') }}"><button>Login</button></a>
             @endif
         </div>
     </div>
