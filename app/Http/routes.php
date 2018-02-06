@@ -11,17 +11,17 @@
 |
 */
 // Homepage Routes
-Route::get('/', 'HomeController@index');
+Route::get('lupustracker/', 'HomeController@index');
 Route::get('home', 'HomeController@index');
 
 // Calendar Routes
-Route::get('calendar/{user_id}', 'CalendarController@index');
+Route::get('lupustracker/calendar/{user_id}', 'CalendarController@index');
 
 // Log Routes
-Route::get('calendar/{user_id}/{date}', 'LogController@getData');
+Route::get('lupustracker/calendar/{user_id}/{date}', 'LogController@getData');
 
 // Ajax Routes
-Route::post('calendar/{user_id}/{date}/create', 'LogController@createLog');
+Route::post('lupustracker/calendar/{user_id}/{date}/create', 'LogController@createLog');
 
 // Authentication Routes
 Route::controllers([
